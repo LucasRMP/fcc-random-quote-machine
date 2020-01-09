@@ -1,3 +1,5 @@
+# Random Quote Machine
+
 ## This project was made for the first FreeCodeCamp front end libraries project
 
 - [x] **User Story #1:** I can see a wrapper element with a corresponding `id="quote-box"`.
