@@ -1,0 +1,26 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-box {
+  width: 800px;
+  padding: 2em;
+
+  transition: height 500ms 0ms, opacity 500ms 500ms;
+
+  background-color: #fff;
+}
+
+#new-quote {
+  border: none;
+  padding: 0.5em 1em;
+
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
