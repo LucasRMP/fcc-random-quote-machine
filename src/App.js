@@ -68,7 +68,7 @@ function App() {
             >
               New quote
             </button>
-            <a href={mountTweetUrl(quote)} id='tweet-quote'>
+            <a href={mountTweetUrl(quote)} id='tweet-quote' target='blank'>
               <FontAwesomeIcon
                 icon={faTwitter}
                 color={color}
