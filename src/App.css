@@ -10,17 +10,40 @@
 #quote-box {
   width: 800px;
   padding: 2em;
-
-  transition: height 500ms 0ms, opacity 500ms 500ms;
+  border-radius: 5px;
 
   background-color: #fff;
 }
 
-#new-quote {
+#text-wrapper {
+  display: flex;
+}
+
+#text-wrapper #text {
+  margin: 0;
+  padding-left: 10px;
+  text-justify: inter-word;
+}
+
+#author {
+  opacity: .5;
+  margin-bottom: 30px;
+}
+
+#footer {
+  display: flex;
+}
+
+#footer #new-quote {
   border: none;
   padding: 0.5em 1em;
 
   color: #fff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
+}
+
+#footer #tweet-quote {
+  margin-left: auto;
+  margin-right: 5px;
 }

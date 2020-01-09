@@ -48,34 +48,39 @@ function App() {
       <AnimateOnChange>
         {!loading && (
           <div id='quote-box'>
-            <FontAwesomeIcon
-              icon={faQuoteRight}
-              color={color}
-              flip='horizontal'
-              size='2x'
-            />
-            <h1 id='text' style={{ color }}>
-              {quote.text}
-            </h1>
-            <h3 id='author' style={{ color }}>
-              {quote.author}
-            </h3>
-            <button
-              id='new-quote'
-              type='submit'
-              onClick={handleClick}
-              style={{ backgroundColor: color }}
-            >
-              New quote
-            </button>
-            <a href={mountTweetUrl(quote)} id='tweet-quote' target='blank'>
+            <div id="text-wrapper">
               <FontAwesomeIcon
-                icon={faTwitter}
+                id="quote-icon"
+                icon={faQuoteRight}
                 color={color}
                 flip='horizontal'
                 size='2x'
-              />
-            </a>
+                />
+              <h1 id='text' style={{ color }}>
+                {quote.text}
+              </h1>
+            </div>
+            <h3 id='author' style={{ color }}>
+              &#8212;{" "}{quote.author}
+            </h3>
+            <div id="footer">
+              <button
+                id='new-quote'
+                type='submit'
+                onClick={handleClick}
+                style={{ backgroundColor: color }}
+              >
+                New quote
+              </button>
+              <a href={mountTweetUrl(quote)} id='tweet-quote' target='blank'>
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  color={color}
+                  flip='horizontal'
+                  size='2x'
+                />
+              </a>
+            </div>
           </div>
         )}
       </AnimateOnChange>
