@@ -31,9 +31,13 @@
   text-justify: inter-word;
 }
 
-#text-wrapper #quote-icon {
-  display: none;
+@media only screen and (max-width: 450px) {
+  #text-wrapper #quote-icon {
+    display: none;
+  }
 }
+
+
 
 #author {
   opacity: .5;
