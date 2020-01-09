@@ -21,7 +21,7 @@ function App() {
     setLoading(true);
     const response = await api.get('/random');
     const data = response.data;
-    if (data.content.length <= 280) {
+    if (data.content.length <= 200) {
       setQuote({ text: data.content, author: data.author });
       changeColor();
     } else {
